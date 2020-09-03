@@ -45,3 +45,8 @@ ALLOWED_HOSTS=localhost,127.0.0.1
 ### Dev Dependencies:
 
 [Pylint-Django (v. 2.3.0)](https://pypi.org/project/pylint-django/)
+
+
+### Link to PR
+
+[ta-dam!](https://github.com/LeoKuhorev/django-custom-user/pull/2)
