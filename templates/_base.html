@@ -14,37 +14,31 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-  <!-- Custom Styles -->
-  {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endcomment %}
   <!--  Favicon -->
-  <link rel="icon" href="https://img.icons8.com/ultraviolet/40/000000/donate.png">
-
+  <link rel="icon" href="https://img.icons8.com/color/80/000000/jake.png">
 
   {% block link %}
   {% endblock link %}
-
 
   <title>
     {% block title %}
     {% endblock title %}
   </title>
 
-
 </head>
+
 <body>
   <!-- Nav Bar -->
-  {% comment %} {% include 'partials/_navbar.html' %} {% endcomment %}
+  {% include 'partials/_navbar.html' %}
   
-  <main role="main" class="container mb-1 mt-5 full-height">
-    <!-- Alerts -->
-    {% comment %} {% include 'partials/_alerts.html' %} {% endcomment %}
+  <main role="main" class="container mb-1 mt-5">
+  <!-- Alerts -->
+  {% include 'partials/_alerts.html' %}
 
     <!-- Page Content -->
     {% block content %} {% endblock content %}
   </main>
 
-  <!-- Footer -->
-  {% comment %} {% include 'partials/_footer.html' %} {% endcomment %}
 
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -54,8 +48,6 @@
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-  {% comment %} <script src="{% static 'js/main.js' %}"></script> {% endcomment %}
-  <!-- Custom JS Scripts -->
   {% block script %}{% endblock script %}
 
 </body>
