@@ -20,10 +20,11 @@
   {% block link %}
   {% endblock link %}
 
-  <title>
-    {% block title %}
-    {% endblock title %}
-  </title>
+  {% if title %}
+    <title>Lab 29 - {{ title }}</title>
+  {% else %}
+    <title>Lab 29 </title>
+  {% endif %}
 
 </head>
 

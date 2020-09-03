@@ -40,3 +40,14 @@ def profile(request):
     }
 
     return render(request, 'users/profile.html', context)
+
+
+@login_required
+def password(request):
+
+    context = {
+        'title': 'Ooops - page not complete',
+
+    }
+
+    return render(request, 'users/password.html', context)

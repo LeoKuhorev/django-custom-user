@@ -39,9 +39,10 @@ class UserManager(BaseUserManager):
 class CustomUser(AbstractUser):
     email = models.EmailField(
         max_length=256, verbose_name='email address', unique=True)
+    date_of_birth = models.DateField(verbose_name='Date of Birth')
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['username', 'first_name', 'last_name']
 
     objects = UserManager()
 
